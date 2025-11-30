@@ -1,0 +1,53 @@
+/* global styles (simple and similar to your original) */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(img/fundoMonitoria.png) ;
+}
+
+.navbar {
+  background: #10266e;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo { font-weight: bold; }
+.navbar .links { display: flex; gap: 10px; align-items: right; }
+.navbar a { color: white; text-decoration: none; }
+.navbar .logout { background: transparent; border: 0; color: white; cursor: pointer; padding: 8px; }
+
+.page { padding: 20px; }
+.page h1 { margin-top: 0px; }
+
+.form-inline { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+.form-inline input { padding:8px 10px; border:1px solid #ccc; border-radius:6px; min-width:180px; }
+
+.form input { padding:10px; border:1px solid #ccc; border-radius:6px; }
+
+.btn {
+  display:inline-block;
+  background:#10266e;
+  color:white;
+  padding:8px 12px;
+  border-radius:6px;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border:1px solid #ddd;
+  padding:10px;
+  text-align:left;
+}
+
+th { background:#10266e; color:white; }
