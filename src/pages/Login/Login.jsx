@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { loginSave } from "../../services/auth";
 import { post } from "../../services/api";
 import "../../style/Login.css";
+import logo from "../../style/img/logo_cliente@2x.png"
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -40,7 +41,7 @@ export default function Login() {
   return (
   <div className="pageLogin">
     <h1 className="tituloTopo">Monitoria UNIESP</h1>
-    <img src="" alt="Logo" className="logo" />
+    <img src={logo} alt="Logo" className="logo" />
     <form onSubmit={entrar} className="form">
       <h2>Login</h2>
       <input type="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)}/>
